@@ -451,6 +451,84 @@ a {
     color: var(--text-light);
     line-height: 1.6;
 }
+
+/* ==================== MD'S MESSAGE SECTION ==================== */
+.md-message {
+    padding: 2rem 0;
+    background-color: #f9fafb; /* Separation from white features section */
+}
+
+.md-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.md-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 3.5rem;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.03);
+    border: 1px solid #ebedf0;
+}
+
+.md-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ebedf0;
+    padding-bottom: 2rem;
+}
+
+.md-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(59, 75, 249, 0.15);
+    border: 2px solid white;
+}
+
+.md-title h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 0.25rem;
+    letter-spacing: -0.5px;
+}
+
+.md-title span {
+    font-size: 0.95rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.md-content {
+    position: relative;
+}
+
+.quote-icon {
+    position: absolute;
+    top: -15px;
+    left: -20px;
+    color: rgba(59, 75, 249, 0.08);
+    z-index: 0;
+}
+
+.md-content p {
+    font-size: 1.15rem;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.md-content p:last-child {
+    margin-bottom: 0;
+}
+
 /* ==================== CTA SECTION ==================== */
 .cta {
     padding: 6rem 0;
@@ -626,6 +704,14 @@ a {
     }
     .features-grid {
         grid-template-columns: 1fr;
+    }
+    .md-card {
+        padding: 2.5rem;
+    }
+    .md-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
     }
     .footer-grid {
         grid-template-columns: 1fr 1fr;

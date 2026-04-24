@@ -1,6 +1,6 @@
 /* Base Styles */
 :root {
-    --primary-color: #3b4bf9; /* Deep blue from the image */
+    --primary-color: #151622; /* #3b4bf9 */
     --primary-hover: #2938d8;
     --text-dark: #1f2937;
     --text-light: #6b7280;
@@ -165,7 +165,7 @@ a {
     margin-top: var(--header-height);
     background-image: 
         linear-gradient(to right, rgba(30, 45, 130, 0.96) 0%, rgba(30, 45, 130, 0.75) 45%, rgba(30, 45, 130, 0.1) 100%),
-        url('https://images.unsplash.com/photo-1764720573370-5008f1ccc9fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=2000');
+        url('/assets/images/home-banner.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -308,6 +308,80 @@ a {
     0% { transform: translateY(0); }
     50% { transform: translateY(5px); }
     100% { transform: translateY(0); }
+}
+
+/* ==================== ABOUT US SECTION ==================== */
+.about-us {
+    padding: 6rem 0;
+    background-color: #ffffff;
+}
+
+.about-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about-header h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+    letter-spacing: -1px;
+}
+
+.about-header p {
+    font-size: 1.15rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.about-text {
+    background-color: #f9fafb;
+    border-radius: 16px;
+    padding: 3.5rem;
+    border: 1px solid #ebedf0;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.03);
+}
+
+.about-text p {
+    font-size: 1.15rem;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.about-text strong {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.locations-box {
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid #ebedf0;
+}
+
+.locations-box h3 {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.locations-box p {
+    margin-bottom: 0;
 }
 
 /* ==================== ACHIEVEMENTS SECTION ==================== */
@@ -697,6 +771,9 @@ a {
 
     .nav-link.active::after {
         display: none; /* remove absolute underline on mobile block design */
+    }
+    .about-text {
+        padding: 2.5rem;
     }
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);

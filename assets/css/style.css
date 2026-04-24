@@ -163,9 +163,6 @@ a {
     width: 100%;
     min-height: calc(100vh - var(--header-height));
     margin-top: var(--header-height);
-    background-image: 
-        linear-gradient(to right, rgba(30, 45, 130, 0.96) 0%, rgba(30, 45, 130, 0.75) 45%, rgba(30, 45, 130, 0.1) 100%),
-        url('/assets/images/home-banner.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
